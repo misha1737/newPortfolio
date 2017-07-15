@@ -1,10 +1,19 @@
 $(document).ready(function() {
-// var flag=true;
 
+//закриття меню при нажиманні
+	var navMain = $(".navbar-collapse");
+
+     navMain.on("click", "a", null, function () {
+         navMain.collapse('hide');
+     });
+//-------------------------------------
+
+//головне меню - переключення сторінок
     $("#main").click(function()
         {
         	 $("section").css({'display':'none'});
             $(".main").css({'display':'block'});
+
     });	
     $("#portfolio").click(function()
         {
@@ -21,4 +30,8 @@ $(document).ready(function() {
         	 $("section").css({'display':'none'});
             $(".contacts").css({'display':'block'});
     });	
+//--------------------------------------
+
+
+
 });
