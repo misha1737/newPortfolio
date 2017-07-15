@@ -1,0 +1,32 @@
+.skills{
+	.skillsContent{
+		margin-top: 100px;
+		background-color: $blue;
+		.text {
+			p,a{
+			@include text();
+			line-height: 50px;
+			margin:10px;	
+			margin-left: 60px;
+			}
+			i{
+				position: absolute;
+				font-size: 40px;
+				margin-left: -60px;	
+			}
+		}
+		button{
+		position:fixed; 
+		top:150px;
+		right:50px;
+		padding: 20px;
+		@include text(20px,$Sansation,$blue);
+		border:none;
+		background-color: $white;
+		border-radius: 10px;
+		}
+		padding-bottom: 50px;
+	}	
+
+	display: 	none;
+}

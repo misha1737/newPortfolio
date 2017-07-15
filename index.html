@@ -7,13 +7,92 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 	<header>
-		<h1>Михаил Козлов</h1>
+		<div class="container">
+			<div class="row">
+				<div class="navbar-header">
+					<button  class="navbar-toggle collapsed menu_btn" data-toggle="collapse" data-target="#top_menu">
+					<span class="glyphicon glyphicon-menu-hamburger"></span>
+					</button>
+					<a href="index.html" class="navbar-brand logo">
+					<h1>Михаил Козлов</h1>
+					<h2>Веб-Разработчик</h2>
+					</a>
+				</div>
+				<div class="collapse navbar-collapse navbar-right" id="top_menu">
+					<ul class="menu">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Портфолио</a></li>
+						<li><a href="#">Навыки</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</header>
+	<section class="main">
+		<div class="mainContent">
+			<div class="container">
+				<div class="row">
+				<div class="col-md-3"><img src="img/foto.jpg" alt="foto" class="img-responsive aboutImg"></div>	
+					<div class="col-md-9">
+					<p>
+						Мені 24 роки. Я займаюся розробкою веб сайтів та дизайном вже понад 2 років. Мені приносить задоволення створення красивих та корисних речей, отримання досвіду та вдосконалення своїх навичок. Мені притаманна висока працездатність, завзятість і наполегливість в роботі.
+					</p>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="skills">
+		<div class="skillsContent">
+			<div class="container">
+				<div class="row">
+					<div class="text">
+						<p>отличное знание HTML5 и CSS3;<br>
+						опыт использования SCSS<br>
+						Практический опыт адаптивной верстки на Bootstrap 3<br>
+						Хорошее знание JavaScript<br>
+						Базовые знания: PHP, MySQL<br>
+						Кроссбраузерная валидная верстка<br>
+						Уверенная работа с системой контроля версий Git;<br>
+						Отличное знание графических редакторов (Adobe Photoshop, Adobe Illustrator, inDesign)<br>
+						умение разбираться в новых технологиях<br>
+						Высокий уровень самоорганизации, ответственность, пунктуальность, целеустремленность, инициатива
+						</p>
+					</div>
+
+					<form action="cv/MishaKozlov.docx">
+    				<button type="submit"><p><i class="fa fa-download" aria-hidden="true"></i> скачать резюме</p></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contacts">
+		<div class="contactsContent">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-4">
+					<h3>Мои Контакты:</h3>
+					<p><i class="fa fa-mobile" aria-hidden="true"></i>	+38(096)480-96-86</p>
+					<p><i class="fa fa-envelope" aria-hidden="true"></i>	mikekozlow2@gmail.com</p>
+					<p><i class="fa fa-skype" aria-hidden="true"></i>	fractale</p>
+					<p><i class="fa fa-map-marker" aria-hidden="true"></i>	Украина, Киев</p>
+					<a href="https://www.facebook.com/misha.kozlov.71"><i class="fa fa-facebook-square" aria-hidden="true"></i>	facebook</a>	<br>
+					<a href="https://vk.com/misha1737"><i class="fa fa-vk" aria-hidden="true"></i>	VK</a>	
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+
 	<script src="libs/jquery/jquery-2.1.4.min.js"></script>
 	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/common.js"></script>

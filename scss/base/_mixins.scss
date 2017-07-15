@@ -1,7 +1,13 @@
-
-@mixin text($size,$lineheight:null, $weight:null, $color:null){
+@mixin text($size:24px, $family:$Proxima, $color:$white, $weight:null, $lineheight:null){
     font-size: $size;
+    font-family: $family;
+    color: $color;
     line-height: $lineheight;
     font-weight: $weight;
-    color: $color;
+}
+
+@mixin button($backgroundColor:$blue,$family:$Konkord){
+	background-color: $backgroundColor;
+	font-family: $family;
+	border-radius: 10px;
 }

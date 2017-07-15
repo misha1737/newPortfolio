@@ -3,14 +3,109 @@
   font-family: "Konkord_Retro";
   src: url("../fonts/Konkord_Retro.ttf"); }
 @font-face {
-  font-family: "Raleway_Medium";
-  src: url("../fonts/Raleway_Medium.ttf"); }
+  font-family: "ProximaNova_Semibold";
+  src: url("../fonts/ProximaNova_Semibold.otf"); }
 @font-face {
   font-family: "Sansation_Light";
   src: url("../fonts/Sansation_Light.ttf"); }
-h1 {
-  color: #f00; }
+header {
+  top: 0;
+  position: fixed;
+  background-color: #eee;
+  height: 100px;
+  width: 100%;
+  margin: auto; }
+  header h1 {
+    font-size: 72px;
+    font-family: "Konkord_Retro", Helvetica, Arial, sans-serif;
+    color: #000;
+    padding: 10px 0px; }
+  header h2 {
+    font-size: 20px;
+    font-family: "Sansation_Light", Helvetica, Arial, sans-serif;
+    color: #000;
+    padding: 15px 5px; }
+  header #top_menu li {
+    display: inline-block;
+    padding: 24px; }
+    header #top_menu li a {
+      font-size: 48px;
+      font-family: "Konkord_Retro", Helvetica, Arial, sans-serif;
+      color: #000;
+      text-decoration: none; }
+    header #top_menu li:hover {
+      background-color: #474d5d;
+      font-family: "Konkord_Retro", Helvetica, Arial, sans-serif;
+      border-radius: 10px; }
+      header #top_menu li:hover a {
+        color: #eee; }
 
-/*footer*/
+.main {
+  display: none; }
+  .main .mainContent {
+    margin-top: 100px;
+    background-color: #474d5d; }
+    .main .mainContent img {
+      border-radius: 50%;
+      margin: 30px; }
+    .main .mainContent p {
+      font-size: 24px;
+      font-family: "ProximaNova_Semibold", Helvetica, Arial, sans-serif;
+      color: #eee;
+      line-height: 30px;
+      margin: 30px;
+      margin-top: 100px; }
+
+.skills {
+  display: none; }
+  .skills .skillsContent {
+    margin-top: 100px;
+    background-color: #474d5d;
+    padding-bottom: 50px; }
+    .skills .skillsContent .text p, .skills .skillsContent .text a {
+      font-size: 24px;
+      font-family: "ProximaNova_Semibold", Helvetica, Arial, sans-serif;
+      color: #eee;
+      line-height: 50px;
+      margin: 10px;
+      margin-left: 60px; }
+    .skills .skillsContent .text i {
+      position: absolute;
+      font-size: 40px;
+      margin-left: -60px; }
+    .skills .skillsContent button {
+      position: fixed;
+      top: 150px;
+      right: 50px;
+      padding: 20px;
+      font-size: 20px;
+      font-family: "Sansation_Light", Helvetica, Arial, sans-serif;
+      color: #474d5d;
+      border: none;
+      background-color: #eee;
+      border-radius: 10px; }
+
+.contacts {
+  display: none; }
+  .contacts .contactsContent {
+    margin-top: 100px;
+    background-color: #474d5d;
+    padding-bottom: 50px; }
+    .contacts .contactsContent h3 {
+      font-size: 48px;
+      font-family: "ProximaNova_Semibold", Helvetica, Arial, sans-serif;
+      color: #eee;
+      padding: 40px 0; }
+    .contacts .contactsContent p, .contacts .contactsContent a {
+      font-size: 24px;
+      font-family: "ProximaNova_Semibold", Helvetica, Arial, sans-serif;
+      color: #eee;
+      line-height: 50px;
+      margin: 10px;
+      margin-left: 60px; }
+    .contacts .contactsContent i {
+      position: absolute;
+      font-size: 40px;
+      margin-left: -60px; }
 
 /*# sourceMappingURL=main.css.map */

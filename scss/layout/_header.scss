@@ -1,3 +1,36 @@
-h1{
-   color:#f00;
+header {
+	top:0;
+	position: fixed;
+	background-color: $white;
+	height: 100px;
+	width:100%;
+	margin:auto; 
+
+	h1{
+	   @include text(72px,$Konkord,$black);
+	   padding:10px 0px;
+	}
+	h2{
+		@include text(20px,$Sansation,$black);
+		   padding:15px 5px;
+	}
+	#top_menu{
+		
+		li{
+			a{
+				@include text(48px,$Konkord,$black);
+				text-decoration: none;
+			}
+		display: inline-block;
+		padding:24px;
+
+		&:hover{
+			a{
+				color:$white;
+			}
+			@include button();
+		}
+		}
+
+	}
 }
