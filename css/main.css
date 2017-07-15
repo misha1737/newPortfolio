@@ -1,0 +1,16 @@
+/*order is imp*/
+@font-face {
+  font-family: "Konkord_Retro";
+  src: url("../fonts/Konkord_Retro.ttf"); }
+@font-face {
+  font-family: "Raleway_Medium";
+  src: url("../fonts/Raleway_Medium.ttf"); }
+@font-face {
+  font-family: "Sansation_Light";
+  src: url("../fonts/Sansation_Light.ttf"); }
+h1 {
+  color: #f00; }
+
+/*footer*/
+
+/*# sourceMappingURL=main.css.map */
