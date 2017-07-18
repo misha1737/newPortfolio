@@ -137,23 +137,25 @@ header {
       position: absolute;
       width: 200px;
       right: 0px; }
-  .portfolio .slider {
+  .portfolio #slider {
     margin-top: 150px;
     background-color: #eee;
     border-radius: 20px;
     position: relative; }
-    .portfolio .slider .prevSlide i, .portfolio .slider .nextSlide i {
+    .portfolio #slider .prevSlide i, .portfolio #slider .nextSlide i {
       font-size: 50px;
       color: #474d5d;
       padding: 50px 10px; }
-      .portfolio .slider .prevSlide i:hover, .portfolio .slider .nextSlide i:hover {
+      .portfolio #slider .prevSlide i:hover, .portfolio #slider .nextSlide i:hover {
         font-size: 70px;
         padding: 40px 0; }
-    .portfolio .slider img {
+    .portfolio #slider img {
       padding: 15px; }
-      .portfolio .slider img:hover {
+      .portfolio #slider img:hover {
         box-shadow: 0 0 40px 3px rgba(0, 0, 0, 0.7);
         padding: 0; }
+    .portfolio #slider .siteIcon {
+      position: absolute; }
 
 .skills {
   display: none; }

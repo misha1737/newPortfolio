@@ -31,7 +31,7 @@
 		}
 		padding-bottom: 50px;
 	}
-	.slider{
+	#slider{
 		margin-top: 150px;
 		background-color:$white;
 		border-radius: 20px;
@@ -52,8 +52,10 @@
 				padding: 0;
 			}
 		}
-
-
+		.siteIcon{
+		
+		position: absolute;
+		}
 	}
 	display: 	none;
 }
