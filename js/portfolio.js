@@ -1,25 +1,32 @@
 $(document).ready(function() {
 
-var mas = $(".siteIcon");
-console.log(mas.length);
+var arrSite = $(".siteIcon");
+
+var sliderWidth =$("#slider").width();
 
 
 
-var sliderIcon = $("#slider .siteIcon");
+var sliderElemens= Math.round((sliderWidth-300)/200);
+console.log(sliderElemens);
+for(var i=0; i<sliderElemens;i++){   
+$("#slider .siteIcon:eq("+i+")").css({
 
-console.log(sliderIcon[0]);
+'display':'block',
+'left':(i*200+100)+'px'
+});
 
-$("#slider .siteIcon:eq("+2+")").css('left', '300px')
+ }
+
+$(".nextSlide").css('float', 'right' );
 
 //построения слайдов
-var displayWidth =$("#slider").width();
-console.log(displayWidth);
+
 //for(var i==0;i<mas.length;i++)
 //$(".siteIcon");
 
  $("#portfolio").click(function()
         {
-           console.log(displayWidth);
+           console.log(sliderWidth);
     }); 
 
 

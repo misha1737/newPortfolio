@@ -33,13 +33,29 @@
 	}
 	#slider{
 		margin-top: 150px;
-		background-color:$white;
+		background-color:#f00;
+		display: inline-block;
 		border-radius: 20px;
 		position: relative;
+
+		width: 1200px;
+
+		@media #{$brk-md}{
+		width: 1000px;
+		}
+		@media #{$brk-md}{
+		width: 768px;
+		}
+		@media #{$brk-xs}{
+		width: 460px;
+		}
+
 		.prevSlide i, .nextSlide i{
 		font-size: 50px;
 		color: $blue;
 		padding: 50px 10px;
+		.nextSlide i{
+		}
 		&:hover{
 			font-size: 70px;
 			padding: 40px 0;
@@ -53,8 +69,11 @@
 			}
 		}
 		.siteIcon{
-		
+			width: 200px;
 		position: absolute;
+		}
+		.siteIcon {
+		display:none;
 		}
 	}
 	display: 	none;
