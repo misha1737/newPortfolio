@@ -1,36 +1,43 @@
-$(document).ready(function() {
+var blockrender=function(offset){
+ 
 
 var arrSite = $(".siteIcon");
-
 var sliderWidth =$("#slider").width();
 
 
+for(var i=0; i<arrSite.length;i++){   
+$("#slider .siteIcon:eq("+i+")").css({'left':(i*180 -(offset*180))+'px'});
 
-var sliderElemens= Math.round((sliderWidth-300)/200);
-console.log(sliderElemens);
-for(var i=0; i<sliderElemens;i++){   
-$("#slider .siteIcon:eq("+i+")").css({
+} 
+}
 
-'display':'block',
-'left':(i*200+100)+'px'
-});
+$(document).ready(function() {
 
- }
+var offset=0;
+blockrender(offset);
 
-$(".nextSlide").css('float', 'right' );
+ 
 
-//построения слайдов
 
-//for(var i==0;i<mas.length;i++)
-//$(".siteIcon");
+ // $("#portfolio").click(function()
+ //        {
+ //           console.log(sliderWidth);
+ //    }); 
 
- $("#portfolio").click(function()
+ $("#nextSlide").click(function()
         {
-           console.log(sliderWidth);
+            offset++;
+            blockrender(offset);
+           console.log('ok');
+
     }); 
+ $("#prevSlide").click(function()
+        {
+            offset--;
+            blockrender(offset);
+           console.log('ok');
 
-
-
+    }); 
 
 
 
