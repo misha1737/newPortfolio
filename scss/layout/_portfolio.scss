@@ -58,7 +58,7 @@
 		padding-bottom: 50px;
 	}
 	#slider{
-		margin-top: 150px;
+		margin-top: 300px;
 		display: inline-block;
 		border-radius: 20px;
 		position: relative;
@@ -69,12 +69,15 @@
 		width: 730px;
 		}		
 		@media #{$brk-md}{
+		
 		width: 540px;
 		}
 		@media #{$brk-sm}{
+		margin-top: 400px;
 		width: 360px;
 		}
 		@media #{$brk-xs}{
+		margin-top: 200px;
 		width: 180px;
 		}
 
@@ -105,11 +108,17 @@
 	}
 
 	#prevSlide i, #nextSlide i{
-		margin-top: 150px;
+		margin-top: 300px;
 		font-size: 50px;
 		color: $blue;
 		padding: 50px 0px;
 		position: absolute;
+		@media #{$brk-sm}{
+		margin-top: 400px;	
+		}
+		@media #{$brk-xs}{
+		margin-top: 200px;
+		}
 		
 		&:hover{
 			transition: 0.5s;
@@ -128,5 +137,8 @@
 	display: 	none;
 	.siteText2, .siteText3,.siteText4,.siteText5, .siteText6,.siteText7{
 		display: 	none;
+	}
+	.siteInfo{
+		position: absolute;
 	}
 }

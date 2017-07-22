@@ -247,7 +247,7 @@ header {
         .portfolio .portfolioContent .smartphone img {
           display: none; } }
   .portfolio #slider {
-    margin-top: 150px;
+    margin-top: 300px;
     display: inline-block;
     border-radius: 20px;
     position: relative;
@@ -262,9 +262,11 @@ header {
         width: 540px; } }
     @media (max-width: 768px) {
       .portfolio #slider {
+        margin-top: 400px;
         width: 360px; } }
     @media (max-width: 460px) {
       .portfolio #slider {
+        margin-top: 200px;
         width: 180px; } }
     .portfolio #slider img {
       padding: 15px;
@@ -276,11 +278,17 @@ header {
       width: 180px;
       position: absolute; }
   .portfolio #prevSlide i, .portfolio #nextSlide i {
-    margin-top: 150px;
+    margin-top: 300px;
     font-size: 50px;
     color: #474d5d;
     padding: 50px 0px;
     position: absolute; }
+    @media (max-width: 768px) {
+      .portfolio #prevSlide i, .portfolio #nextSlide i {
+        margin-top: 400px; } }
+    @media (max-width: 460px) {
+      .portfolio #prevSlide i, .portfolio #nextSlide i {
+        margin-top: 200px; } }
     .portfolio #prevSlide i:hover, .portfolio #nextSlide i:hover {
       transition: 0.5s;
       font-size: 70px;
@@ -292,6 +300,8 @@ header {
     float: left; }
   .portfolio .siteText2, .portfolio .siteText3, .portfolio .siteText4, .portfolio .siteText5, .portfolio .siteText6, .portfolio .siteText7 {
     display: none; }
+  .portfolio .siteInfo {
+    position: absolute; }
 
 .skills {
   display: none; }

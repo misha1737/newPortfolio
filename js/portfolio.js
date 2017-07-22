@@ -58,7 +58,7 @@ $(".siteIcon").click(function()
 
 //очистка інформації про сайт
             
-            for(var i=0;i<$(".siteIcon").length;i++){
+            for(var i=0;i<$(".siteIcon").length+1;i++){
                 $(".siteText"+i).css({
                     'display':'none'
                 }); 
@@ -68,7 +68,7 @@ $(".siteIcon").click(function()
 
 //добавлення інформації про сайт
             $(".siteText"+siteNumber).css({
-                    'display':'inline-block'
+                    'display':'block'
                  }); 
              console.log( (".site"+4));
 //---------------------------
