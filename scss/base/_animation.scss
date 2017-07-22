@@ -1,0 +1,92 @@
+@keyframes moveRight {
+		from {margin-left: -400px; opacity: 0;}
+		to {margin-left: 0px; opacity: 1;}
+		}
+
+@keyframes moveLeft{
+		from {margin-left: 400px; opacity: 0;}
+		to {margin-left: 30px; opacity: 1;}
+		}
+
+@keyframes width{
+		from {width: 0px; opacity: 0; }
+		30%{width: 0px; opacity: 0;}
+		to {width: 900px; opacity: 1; }
+}
+@keyframes height{
+		from {max-height: 0;  }
+		to {max-height: 1000px; }
+}
+ @keyframes mainText{
+		from {padding-top: 50px; opacity: 0;}
+		to {padding-top: 0px; opacity: 1;}
+ }
+
+@keyframes opacity{
+		from { opacity: 0;}
+		to { opacity: 1;}
+ }
+ @keyframes button{
+		from {background-color: #999}
+		20%	{background-color: $white}
+		80%	{background-color: $white}
+		to {background-color: #999}
+ }
+
+
+.main
+{
+	img{		
+		animation: moveRight 2s;
+	}
+	p{
+		animation: mainText 2s;
+	}
+	.mainContent{
+		animation: height 2s;
+	}
+}
+
+.portfolio{
+
+	.bgLine{
+		animation: height 2s;
+	}
+	p{
+		animation: opacity 2s;
+	}
+	li{
+		animation: moveLeft  1s;
+	}
+	.display img, .smartphone img{
+		animation: moveRight 1s;
+	}
+	#slider{
+		animation: width 3s;
+	}
+}
+
+
+
+.skills{
+	.skillsContent{
+		animation: height 2s;
+	}
+	.text{
+		animation: opacity 2s;
+	}
+	button{
+		animation: button 4s infinite;
+	}
+}
+
+.contacts{
+	.contactsContent{
+		animation: height 2s;
+	}
+	h3,p,a,i{
+		animation: opacity 2s;
+	}
+	
+}
+

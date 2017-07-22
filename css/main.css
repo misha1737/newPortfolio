@@ -8,6 +8,86 @@
 @font-face {
   font-family: "Sansation_Light";
   src: url("../fonts/Sansation_Light.ttf"); }
+@keyframes moveRight {
+  from {
+    margin-left: -400px;
+    opacity: 0; }
+  to {
+    margin-left: 0px;
+    opacity: 1; } }
+@keyframes moveLeft {
+  from {
+    margin-left: 400px;
+    opacity: 0; }
+  to {
+    margin-left: 30px;
+    opacity: 1; } }
+@keyframes width {
+  from {
+    width: 0px;
+    opacity: 0; }
+  30% {
+    width: 0px;
+    opacity: 0; }
+  to {
+    width: 900px;
+    opacity: 1; } }
+@keyframes height {
+  from {
+    max-height: 0; }
+  to {
+    max-height: 1000px; } }
+@keyframes mainText {
+  from {
+    padding-top: 50px;
+    opacity: 0; }
+  to {
+    padding-top: 0px;
+    opacity: 1; } }
+@keyframes opacity {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes button {
+  from {
+    background-color: #999; }
+  20% {
+    background-color: #eee; }
+  80% {
+    background-color: #eee; }
+  to {
+    background-color: #999; } }
+.main img {
+  animation: moveRight 2s; }
+.main p {
+  animation: mainText 2s; }
+.main .mainContent {
+  animation: height 2s; }
+
+.portfolio .bgLine {
+  animation: height 2s; }
+.portfolio p {
+  animation: opacity 2s; }
+.portfolio li {
+  animation: moveLeft  1s; }
+.portfolio .display img, .portfolio .smartphone img {
+  animation: moveRight 1s; }
+.portfolio #slider {
+  animation: width 3s; }
+
+.skills .skillsContent {
+  animation: height 2s; }
+.skills .text {
+  animation: opacity 2s; }
+.skills button {
+  animation: button 4s infinite; }
+
+.contacts .contactsContent {
+  animation: height 2s; }
+.contacts h3, .contacts p, .contacts a, .contacts i {
+  animation: opacity 2s; }
+
 header {
   top: 0;
   position: fixed;
@@ -88,7 +168,8 @@ header {
       text-align: center; } }
   .main .mainContent img {
     border-radius: 50%;
-    margin: 30px; }
+    margin: 30px;
+    margin-left: 0px; }
     @media (max-width: 768px) {
       .main .mainContent img {
         margin: 10px; } }
@@ -114,6 +195,9 @@ header {
     position: absolute;
     height: 230px;
     width: 100%; }
+    @media (max-width: 768px) {
+      .portfolio .bgLine {
+        display: none; } }
   .portfolio .portfolioContent {
     margin-top: 150px;
     padding-bottom: 50px; }
@@ -122,27 +206,52 @@ header {
       font-family: "ProximaNova_Semibold", Helvetica, Arial, sans-serif;
       color: #eee;
       line-height: 50px; }
+      @media (max-width: 768px) {
+        .portfolio .portfolioContent p {
+          margin-top: 200px;
+          font-size: 18px;
+          font-family: "ProximaNova_Semibold", Helvetica, Arial, sans-serif;
+          color: #474d5d; } }
+      @media (max-width: 460px) {
+        .portfolio .portfolioContent p {
+          margin-top: 0px; } }
     .portfolio .portfolioContent li {
       font-size: 18px;
       font-family: "ProximaNova_Semibold", Helvetica, Arial, sans-serif;
       color: #eee;
       line-height: 25px;
       margin-left: 30px; }
+      @media (max-width: 768px) {
+        .portfolio .portfolioContent li {
+          font-size: 18px;
+          font-family: "ProximaNova_Semibold", Helvetica, Arial, sans-serif;
+          color: #474d5d; } }
     .portfolio .portfolioContent .display img {
       top: -30px;
       position: absolute;
       width: 400px; }
+      @media (max-width: 460px) {
+        .portfolio .portfolioContent .display img {
+          display: none; } }
     .portfolio .portfolioContent .smartphone img {
       top: 60px;
       position: absolute;
       width: 200px;
-      right: 0px; }
+      right: 0; }
+      @media (max-width: 992px) {
+        .portfolio .portfolioContent .smartphone img {
+          right: -70px;
+          width: 50%;
+          top: 80%; } }
+      @media (max-width: 460px) {
+        .portfolio .portfolioContent .smartphone img {
+          display: none; } }
   .portfolio #slider {
     margin-top: 150px;
     display: inline-block;
     border-radius: 20px;
     position: relative;
-    height: 200px;
+    height: 150px;
     width: 900px;
     overflow: hidden; }
     @media (max-width: 1200px) {
@@ -163,7 +272,7 @@ header {
       .portfolio #slider img:hover {
         padding: 0; }
     .portfolio #slider .siteIcon {
-      transition: opacity 1s , left 1s;
+      transition: opacity 0.5s , left 0.5s;
       width: 180px;
       position: absolute; }
   .portfolio #prevSlide i, .portfolio #nextSlide i {

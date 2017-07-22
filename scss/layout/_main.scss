@@ -10,6 +10,7 @@
 		img{
 			border-radius: 50%;
 			margin:30px;
+			margin-left:0px; 
 			@media #{$brk-sm} {
 			margin:10px;
     		}
