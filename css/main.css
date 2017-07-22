@@ -58,36 +58,36 @@
     background-color: #eee; }
   to {
     background-color: #999; } }
-.main img {
-  animation: moveRight 2s; }
-.main p {
-  animation: mainText 2s; }
-.main .mainContent {
-  animation: height 2s; }
+@media (min-width: 1024px) {
+  .main img {
+    animation: moveRight 2s; }
+  .main p {
+    animation: mainText 2s; }
+  .main .mainContent {
+    animation: height 2s; }
 
-.portfolio .bgLine {
-  animation: height 2s; }
-.portfolio p {
-  animation: opacity 2s; }
-.portfolio li {
-  animation: moveLeft  1s; }
-.portfolio .display img, .portfolio .smartphone img {
-  animation: moveRight 1s; }
-.portfolio #slider {
-  animation: width 3s; }
+  .portfolio .bgLine {
+    animation: height 2s; }
+  .portfolio p {
+    animation: opacity 2s; }
+  .portfolio li {
+    animation: moveLeft  1s; }
+  .portfolio .display img, .portfolio .smartphone img {
+    animation: moveRight 1s; }
+  .portfolio #slider {
+    animation: width 3s; }
 
-.skills .skillsContent {
-  animation: height 2s; }
-.skills .text {
-  animation: opacity 2s; }
-.skills button {
-  animation: button 4s infinite; }
+  .skills .skillsContent {
+    animation: height 2s; }
+  .skills .text {
+    animation: opacity 2s; }
+  .skills button {
+    animation: button 4s infinite; }
 
-.contacts .contactsContent {
-  animation: height 2s; }
-.contacts h3, .contacts p, .contacts a, .contacts i {
-  animation: opacity 2s; }
-
+  .contacts .contactsContent {
+    animation: height 2s; }
+  .contacts h3, .contacts p, .contacts a, .contacts i {
+    animation: opacity 2s; } }
 header {
   top: 0;
   position: fixed;
