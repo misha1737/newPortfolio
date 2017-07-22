@@ -139,7 +139,6 @@ header {
       right: 0px; }
   .portfolio #slider {
     margin-top: 150px;
-    background-color: #f00;
     display: inline-block;
     border-radius: 20px;
     position: relative;
@@ -164,7 +163,7 @@ header {
       .portfolio #slider img:hover {
         padding: 0; }
     .portfolio #slider .siteIcon {
-      transition: 1s;
+      transition: opacity 1s , left 1s;
       width: 180px;
       position: absolute; }
   .portfolio #prevSlide i, .portfolio #nextSlide i {

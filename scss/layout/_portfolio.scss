@@ -33,7 +33,6 @@
 	}
 	#slider{
 		margin-top: 150px;
-		background-color:#f00;
 		display: inline-block;
 		border-radius: 20px;
 		position: relative;
@@ -65,14 +64,15 @@
 			}
 		}
 		.siteIcon{
-			transition: 1s;
+			transition: opacity 1s , left 1s;
+			//transition: 1s;
 			width: 180px;
 		position: absolute;
 		}
 		.siteIcon {
 		// display:none;
 		}
-		
+
 	}
 
 	#prevSlide i, #nextSlide i{

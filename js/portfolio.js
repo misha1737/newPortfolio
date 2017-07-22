@@ -9,7 +9,7 @@ var sliderWidth =$("#slider").width();
 console.log(arrSite);
 //elem =arrSite.shift();
 var offset=function(number){
-    // if (position<0){
+
     //     number=arrSite.length+position;
     //     position=0;
     //     console.log(position);
@@ -20,6 +20,19 @@ var offset=function(number){
 
 
 for(var i=0; i<arrSite.length;i++){   
+    if (i==0 || i==arrSite.length-1 ){
+        $("#slider .siteIcon:eq("+i+")").css({
+            'opacity':'0.0'
+
+        });
+        
+    }else{
+        $("#slider .siteIcon:eq("+i+")").css({
+            'opacity':'1'
+
+        });
+    }
+
 $("#slider .siteIcon:eq("+i+")").css({'left':offset(i)+'px'});
 
 } 
