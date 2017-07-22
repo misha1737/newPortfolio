@@ -86,10 +86,13 @@
 			&:hover{
 				
 				
-				padding: 0;
+				padding: 5px;
 			}
 		}
 		.siteIcon{
+			img{
+
+			}
 			transition: opacity 0.5s , left 0.5s;
 			//transition: 1s;
 			width: 180px;
@@ -123,4 +126,7 @@
 	}
 
 	display: 	none;
+	.siteText2, .siteText3,.siteText4,.siteText5, .siteText6,.siteText7{
+		display: 	none;
+	}
 }

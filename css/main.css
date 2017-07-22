@@ -270,7 +270,7 @@ header {
       padding: 15px;
       transition: 0.5s; }
       .portfolio #slider img:hover {
-        padding: 0; }
+        padding: 5px; }
     .portfolio #slider .siteIcon {
       transition: opacity 0.5s , left 0.5s;
       width: 180px;
@@ -290,6 +290,8 @@ header {
     right: 40px; }
   .portfolio #prevSlide {
     float: left; }
+  .portfolio .siteText2, .portfolio .siteText3, .portfolio .siteText4, .portfolio .siteText5, .portfolio .siteText6, .portfolio .siteText7 {
+    display: none; }
 
 .skills {
   display: none; }
