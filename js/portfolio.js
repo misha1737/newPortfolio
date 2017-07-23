@@ -24,29 +24,11 @@ var blockrender=function(){
     } 
 }
 
-$(document).ready(function() {
-var elem;
-blockrender();
-
-
-
- $("#nextSlide").click(function()
-        {
-            elem=$('#slider > :first').detach(); 
-            elem.appendTo('#slider');
-            blockrender();
-    }); 
- $("#prevSlide").click(function()
-        {
-            elem=$('#slider > :last').detach(); 
-            elem.prependTo('#slider');
-            blockrender();
-    }); 
-
-$(".siteIcon").click(function()
-        {
-            var siteBox= $(this).attr('id');
-            var siteNumber=($(this).attr('id')).substring(4);
+ var setActiveBlock=function(obj){
+   
+   var siteBox= $(obj).attr('id');
+            var siteNumber=($(obj).attr('id')).substring(4);
+            console.log(siteNumber);
 // Виділення іконок сайтів          
             $('.siteIcon img').css ({
                  'box-shadow':'none'
@@ -70,8 +52,49 @@ $(".siteIcon").click(function()
             $(".siteText"+siteNumber).css({
                     'display':'block'
                  }); 
-             console.log( (".site"+4));
+             
 //---------------------------
+return siteNumber;
+ }
+
+
+$(document).ready(function() {
+var elem;
+var activeBlock=1;
+blockrender();
+activeBlock=setActiveBlock('#slider > :eq( 1 )');
+
+
+ $("#nextSlide").click(function()
+        {
+            elem=$('#slider > :first').detach(); 
+            elem.appendTo('#slider');
+            blockrender();
+
+            if (activeBlock== $(".siteIcon").length-1)
+            {activeBlock=0}
+            else{activeBlock++;}
+
+            activeBlock=setActiveBlock("#site"+ activeBlock); 
+             console.log(activeBlock);
+    }); 
+ $("#prevSlide").click(function()
+        {
+
+            elem=$('#slider > :last').detach(); 
+            elem.prependTo('#slider');
+            blockrender();
+             if (activeBlock== 0)
+            {activeBlock=$(".siteIcon").length-1}
+            else{activeBlock--;}
+            activeBlock=setActiveBlock("#site"+ activeBlock); 
+            console.log(activeBlock);
+
+    }); 
+
+$(".siteIcon").click(function()
+        {
+         console.log(activeBlock=setActiveBlock(this));
     }); 
 
     });	
