@@ -29,6 +29,111 @@ var blockrender=function(){
    var siteBox= $(obj).attr('id');
             var siteNumber=($(obj).attr('id')).substring(4);
             console.log(siteNumber);
+// добавлення зображень на телефон і на дісплей на сайті 
+
+switch(siteNumber) {
+    case '1': {
+            $("#siteOnDisplay").css({
+                'background-image': 'url(img/d1.jpg)',
+                'background-size': 'cover'
+            });
+            $("#siteOnSmartphone").css({
+                'display':'inline-block',
+                'background-image': 'url(img/s1.jpg)',
+                'background-size': 'cover'
+            });
+            $("#smartphone").css({
+                'opacity':'1'
+            });
+            break;}
+    case '2': {
+            $("#siteOnDisplay").css({
+                'background-image': 'url(img/d2.jpg)',
+                'background-size': 'cover'
+            });
+            $("#siteOnSmartphone").css({
+                'display':'inline-block',
+                'background-image': 'url(img/s2.jpg)',
+                'background-size': 'cover'
+            });
+             $("#smartphone").css({
+                'opacity':'1'
+            });
+            break;}
+    case '3':  {
+            $("#siteOnDisplay").css({
+                'background-image': 'url(img/d3.jpg)',
+                'background-size': 'cover'
+            });
+            $("#siteOnSmartphone").css({
+                'display':'inline-block',
+                'background-image': 'url(img/s3.jpg)',
+                'background-size': 'cover'
+            });
+             $("#smartphone").css({
+                'opacity':'1'
+            });
+            break;}
+    case '4':  {
+            $("#siteOnDisplay").css({
+                'background-image': 'url(img/d4.jpg)',
+                'background-size': 'cover'
+            });
+            $("#siteOnSmartphone").css({
+                'display':'inline-block',
+                'background-image': 'url(img/s4.jpg)',
+                'background-size': 'cover'
+            });
+             $("#smartphone").css({
+                'opacity':'1'
+            });
+            break;}
+    case '5':  {
+            $("#siteOnDisplay").css({
+                'background-image': 'url(img/d5.jpg)',
+                'background-size': 'cover'
+            });
+            $("#siteOnSmartphone").css({
+                'display':'none'
+            });
+             $("#smartphone").css({
+                'opacity':'0'
+            });
+            break;}
+    case '6':  {
+            $("#siteOnDisplay").css({
+                'background-image': 'url(img/d2.jpg)',
+                'background-size': 'cover'   
+            });
+            $("#siteOnSmartphone").css({
+                'display':'none'
+            });
+             $("#smartphone").css({
+                'opacity':'0'
+            });
+            break;}
+    case '0':  {
+            $("#siteOnDisplay").css({
+                'background-image': 'url(img/d6.jpg)',
+                'background-size': 'cover'
+            });
+            $("#siteOnSmartphone").css({
+                'display':'none'
+            });
+             $("#smartphone").css({
+                'opacity':'0'
+            });
+            break;}
+  default:
+    console.log('siteNumber fatal error');
+}
+
+
+
+
+
+//---------------------------      
+
 // Виділення іконок сайтів          
             $('.siteIcon img').css ({
                  'box-shadow':'none'

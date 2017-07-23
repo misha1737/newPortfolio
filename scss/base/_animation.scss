@@ -4,7 +4,7 @@
 		}
 
 @keyframes moveLeft{
-		from {margin-left: 400px; opacity: 0;}
+		from {margin-left: 300px; opacity: 0;}
 		to {margin-left: 0px; opacity: 1;}
 		}
 
@@ -24,6 +24,11 @@
 
 @keyframes opacity{
 		from { opacity: 0;}
+		to { opacity: 1;}
+ }
+ @keyframes opacityD{
+		from { opacity: 0;}
+		50% { opacity: 0;}
 		to { opacity: 1;}
  }
  @keyframes button{
@@ -63,11 +68,17 @@
 	}
 	
 
-	.display img, .smartphone img{
+	#display img, #smartphone img{
 		animation: moveRight 1s;
 	}
 	#slider{
 		animation: width 3s;
+	}
+	#siteOnDisplay {
+		animation: opacityD 3s;
+	}
+	#siteOnSmartphone{
+		animation: opacity 2s;
 	}
 }
 
