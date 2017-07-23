@@ -5,7 +5,7 @@
 
 @keyframes moveLeft{
 		from {margin-left: 400px; opacity: 0;}
-		to {margin-left: 30px; opacity: 1;}
+		to {margin-left: 0px; opacity: 1;}
 		}
 
 @keyframes width{
@@ -52,12 +52,17 @@
 	.bgLine{
 		animation: height 2s;
 	}
-	p{
+	h5{
 		animation: opacity 2s;
 	}
 	li{
 		animation: moveLeft  1s;
 	}
+	button{
+		animation: moveLeft  1s;
+	}
+	
+
 	.display img, .smartphone img{
 		animation: moveRight 1s;
 	}
@@ -74,9 +79,6 @@
 	}
 	.text{
 		animation: opacity 2s;
-	}
-	button{
-		animation: button 4s infinite;
 	}
 }
 

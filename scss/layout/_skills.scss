@@ -33,6 +33,12 @@
 		border:none;
 		background-color: $white;
 		border-radius: 10px;
+		cursor: pointer;
+		&:hover{
+				background-color: $black;
+				color: $white;
+				transition: color 1s , background-color 1s;
+			}
 		@media #{$brk-md} {
         		position:static; 
     			}
