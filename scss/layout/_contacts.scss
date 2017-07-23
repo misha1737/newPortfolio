@@ -5,6 +5,9 @@
 		h3{
 			@include text(48px);
 			padding:40px 0;
+			@media #{$brk-xs}{
+			font-size: 32px;
+			}
 		}
 		p,a{
 			@include text();

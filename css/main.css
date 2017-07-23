@@ -230,21 +230,69 @@ header {
       top: -30px;
       position: absolute;
       width: 400px; }
+      @media (max-width: 768px) {
+        .portfolio .portfolioContent .display img {
+          width: 312px; } }
       @media (max-width: 460px) {
         .portfolio .portfolioContent .display img {
+          display: none; } }
+    .portfolio .portfolioContent .siteOnDisplay {
+      display: inline-block;
+      top: -14px;
+      left: 32px;
+      position: absolute;
+      width: 366px;
+      background-color: #f00;
+      height: 210px;
+      z-index: 2; }
+      @media (max-width: 992px) {
+        .portfolio .portfolioContent .siteOnDisplay {
+          top: -18px;
+          left: 28px;
+          width: 286px;
+          height: 164px; } }
+      @media (max-width: 460px) {
+        .portfolio .portfolioContent .siteOnDisplay {
           display: none; } }
     .portfolio .portfolioContent .smartphone img {
       top: 60px;
       position: absolute;
       width: 200px;
-      right: 0; }
+      right: 0;
+      z-index: 3; }
+      @media (max-width: 1200px) {
+        .portfolio .portfolioContent .smartphone img {
+          right: -82px; } }
       @media (max-width: 992px) {
         .portfolio .portfolioContent .smartphone img {
-          right: -70px;
-          width: 50%;
-          top: 80%; } }
+          top: 34px;
+          right: -90px;
+          width: 160px; } }
+      @media (max-width: 768px) {
+        .portfolio .portfolioContent .smartphone img {
+          width: 160px;
+          left: 242px;
+          top: 34px; } }
       @media (max-width: 460px) {
         .portfolio .portfolioContent .smartphone img {
+          display: none; } }
+    .portfolio .portfolioContent .siteOnSmartphone {
+      display: inline-block;
+      top: 81px;
+      left: 338px;
+      position: absolute;
+      width: 98px;
+      background-color: #ff0;
+      height: 154px;
+      z-index: 4; }
+      @media (max-width: 992px) {
+        .portfolio .portfolioContent .siteOnSmartphone {
+          top: 51px;
+          left: 283px;
+          width: 79px;
+          height: 124px; } }
+      @media (max-width: 460px) {
+        .portfolio .portfolioContent .siteOnSmartphone {
           display: none; } }
   .portfolio #slider {
     margin-top: 300px;
@@ -354,6 +402,9 @@ header {
       font-family: "ProximaNova_Semibold", Helvetica, Arial, sans-serif;
       color: #eee;
       padding: 40px 0; }
+      @media (max-width: 460px) {
+        .contacts .contactsContent h3 {
+          font-size: 32px; } }
     .contacts .contactsContent p, .contacts .contactsContent a {
       font-size: 24px;
       font-family: "ProximaNova_Semibold", Helvetica, Arial, sans-serif;
